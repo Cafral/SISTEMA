@@ -1,0 +1,17 @@
+#contenedor_opciones .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#contenedor_opciones .col-md-6 {
+    flex: 0 0 48%;  /* Esto hace que cada columna ocupe el 48% del ancho disponible */
+    margin-bottom: 20px; /* Espacio entre las filas de columnas */
+}
+
+#contenedor_opciones img {
+    width: 100%;  /* Asegura que la imagen ocupe el 100% del ancho de su contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+    max-height: 200px; /* Puedes ajustar este valor según el tamaño que prefieras */
+    object-fit: cover; /* Asegura que las imágenes se ajusten sin distorsionarse */
+}

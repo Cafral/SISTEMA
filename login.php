@@ -1,12 +1,12 @@
 <?php
 session_start();
-require_once 'conexion.php';
+require_once 'config/conexion.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['username'];
     $email = $_POST['email'];
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-    $role = $_POST['role'];
+    $rol = $_POST['rol'];
     $stmt->close();
 }
 ?>
@@ -14,14 +14,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Registro</title>
+    <title>Login de usuarios</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
     <div class="container mt-5">
-        <h2>Registro de Usuario</h2>
-        <form method="POST">
+        <h2>Inicio de sesion</h2>
+        <form method="POST"  id="contenedor">
             <div class="mb-3">
                 <label>Usuario</label>
                 <input type="text" name="username" class="form-control" required>
@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <option value="admin">Administrador</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-primary">Registrar</button>
+            <button type="submit" class="btn btn-primary">Ingresar</button>
         </form>
     </div>
 </body>

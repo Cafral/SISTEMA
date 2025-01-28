@@ -5,10 +5,85 @@ body {
     /* Evita que la imagen se repita */
     background-size: cover;
     /* Escala la imagen para cubrir toda la pantalla */
-    background-position: center;
+    background-position: 200px;
     /* Centra la imagen */
     background-attachment: fixed;
     /* Hace que la imagen permanezca fija al hacer scroll */
+    background-color: black;
+    /* Fondo de color */
     color: white;
     /* Color de las letras */
+}
+
+#contenedor {
+    position: relative;
+    margin-left: 20px;
+    left: 0;
+    text-align: left;
+}
+
+.container {
+    background: transparent;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
+    margin-left: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.form-control {
+    border-radius: 10px;
+    box-shadow: none;
+    border: 1px solid #ced4da;
+    padding: 0.8rem 1rem;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.mb-3 {
+    margin-bottom: 1.2rem !important;
+}
+
+select.form-control {
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background: #f4d03f;
+    color: #ffffff;
+    border: none;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: #0056b3;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+label {
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+input::placeholder {
+    font-size: 0.9rem;
+    color: #a9a9a9;
 }
