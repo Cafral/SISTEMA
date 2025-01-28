@@ -1,0 +1,42 @@
+/* Ajustes personalizados */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    color: #f4d03f;
+}
+
+#contenedor{
+    margin-right: 500px;
+}
+
+table {
+    margin-right: 500px;
+    color: #000000;
+}
+
+th {
+    background-color: #f4d03f;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+}
+
+.form-control {
+    max-width: 250px;
+}
+
+.btn-primary {
+    background-color: #f4d03f;
+    border-color: #f4d03f;
+}
+
+/* Estilo para cuando no hay resultados */
+.table th, .table td {
+    text-align: center;
+}
